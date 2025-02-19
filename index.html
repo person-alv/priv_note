@@ -10,8 +10,11 @@
     <title>Dear Becca...</title>
 </head>
 <body>
-<div id="background-audio">
-    <audio controls loop autoplay >
+<div id="audio_button">
+    <button onclick="document.getElementById('background-audio').querySelector('audio').play()">CLICK ME FIRST</button>
+</div>
+    <div id="background-audio">
+    <audio autoplay loop >
         <source src="static/audio/audio_one.mp3" type="audio/mpeg">
     </audio>
 </div>

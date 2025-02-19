@@ -5,7 +5,8 @@ body {
     border-right: 20px solid #ff0000; /* Adjust the color and width as needed */
     padding-left: 20px; /* Adjust the padding to match the border width */
     padding-right: 20px;
-    background-color: wheat;
+    background-image: url('../images/image-2.jpg');
+    background-size: cover;
     cursor:default;
 }
 
@@ -13,12 +14,16 @@ body {
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
     animation: zoomIn 2s ease-in-out;
+    color:white ;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Text shadow effect */
 }
 
 .heading2 h2 {
     font-family: 'Poiret One', sans-serif;
     font-size: 2.5em;
     animation: bounce 2s infinite;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Text shadow effect */
 }
 
 @keyframes bounce {
@@ -61,6 +66,12 @@ body {
     background-color: #ffcccc;
     padding: 10px;
     animation: slideIn 2s ease-in-out, slideAway 40s ease-in-out infinite;
+    opacity: 0%;
+    transition: opacity 2s ease-in-out; /* Smooth transition for opacity */
+}
+.paragraph-2 p:hover {
+    opacity: 100%;
+    transition:  opacity 2s ease-in-out; /* Smooth transition for opacity */
 }
 
 @keyframes slideIn {
@@ -94,6 +105,12 @@ body {
     background-color: #ccffcc;
     padding: 10px;
     animation: slideUp 2s ease-in-out, typing 4s steps(40, end);
+    opacity: 0%;
+    transition: opacity 2s ease-in-out; /* Smooth transition for opacity */
+}
+.paragraph-3 p:hover {
+    opacity: 100%;
+    transition:  opacity 2s ease-in-out; /* Smooth transition for opacity */
 }
 
 @keyframes slideUp {
@@ -106,6 +123,18 @@ body {
         opacity: 1;
     }
 }
-#background-audio{
-    display: none;
+#audio-button, button {
+    width: 50%;
+    border-radius: 45px; /* Make borders blunt */
+    display: flex;
+    justify-content: center; /* Center the button */
+    align-items: center;
+    margin: 0 auto; /* Center the button horizontally */
+    background-color: #e0f7fa; /* Light cyan background color */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Glow effect */
+    transition: box-shadow 0.5s ease; /* Smooth transition for glow effect */
+}
+
+#audio-button:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Stronger glow on hover */
 }

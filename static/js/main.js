@@ -19,3 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(type, index * 1500); // Delay next paragraph typing
     });
 });
+
